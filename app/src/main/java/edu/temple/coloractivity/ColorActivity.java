@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 public class ColorActivity extends AppCompatActivity {
 
-    String[] colors = {"BLACK", "BLUE", "CYAN", "GRAY", "WHITE", "GREEN", "LTGRAY", "MAGENTA",
+    String[] colors = {"BLACK", "BLUE", "CYAN", "GRAY", "WHITE", "GREEN", "BLUE", "MAGENTA",
         "RED", "YELLOW"};
 
 
@@ -36,7 +36,6 @@ public class ColorActivity extends AppCompatActivity {
                 View root = someView.getRootView();
                 Toast.makeText(ColorActivity.this, colors[i] + " print", Toast.LENGTH_SHORT).show();
                 root.setBackgroundColor(Color.parseColor(colors[i]));
-
             }
 
             @Override
